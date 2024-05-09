@@ -1,0 +1,172 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
+<script type="text/javascript" src="/templates/tuf/vertical-parallax.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<style>
+body {
+	margin: 25px 0px;
+	padding: 0px;
+	text-align: center;
+	color: #000;
+	font-family: "Gill Sans", cursive;
+	font-size: 1.3em;
+	line-height: 140%;
+	background: url(/templates/tuf/bg-city.png) 0 350px repeat-x,
+		url(/templates/tuf/bg-hills.png) 0 480px repeat-x,
+		url(/templates/tuf/bg-mountains.png) 0 350px repeat-x,
+		url(/templates/tuf/bg-sky.png) 0 0 repeat-x #ffffff;
+}
+
+.container {
+	width: 890px;
+	margin: 0px auto;
+	text-align: left;
+	padding: 35px;
+}
+
+.insider {
+	width: 890px;
+	float: left;
+	background-color: white;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 15px;
+	height: 100%;
+
+}
+
+#nav {
+	width: auto;
+	font-size: 0.70em;
+	list-style: none;
+	padding: 0;
+
+	float: right;
+	margin-right: 30px; 
+	clear: both;
+}
+
+#nav li {
+	background-color: #0776a0;
+	text-align: left;
+	float: left;
+	text-transform: uppercase;
+	border-right: 0px solid #279bd5;
+	display: block;
+	    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#nav li a,
+#nav li a:visited {
+	display: block;
+	padding: 0.4em 4em 0.4em 0.4em;
+	color: #99ff99; 
+	text-decoration: none;
+}
+
+#nav li a:hover {
+	color: #FFF;
+	background-color: #279bd5;
+	text-decoration: none;
+		    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+#nav li a.current,
+#nav li a.current:visited,
+#nav li a.current:hover {
+	color: #FFF;
+	text-decoration: none;
+}
+
+.left {
+	float: left;
+}
+
+.footer {
+	width: 890px;
+	font-size: 0.8em;
+	text-align: right;
+	margin-top: 1em;
+	padding: 5px;
+	border-top: 2px solid #ccc;
+	float: left;
+	clear: both;
+}
+
+.settings {
+	clear: both;
+	margin: 15px;
+	border-top: 5px solid #65A5D1;
+	text-align: left;
+}
+
+.wrong {
+	color: #FF4040;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+li {
+	margin-left: 20px;
+}
+
+li:first-child {
+	margin-left: 0;
+}
+
+.content-wrapper {
+	padding: 0 10px; 
+}
+
+
+
+h1.left a {
+	color: #FFFFFF; 
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1 class="left"><a href="./">MY TUF SITE</a></h1>
+<br>
+
+
+
+<div class="insider">
+    <div id="nav">
+        <ul>
+            <li><a href="/index">Home</a></li>
+            <li><a href="/news">News</a></li>
+            <li><a href="/notepad">Blog</a></li>
+            <li><a href="/internet">Links</a></li>
+            <li><a href="/myfiles">Contact</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="content-wrapper">
+        [[CONTENTS]] <!-- Контент с отступами -->
+    </div>
+</div>
+
+<div class="footer">
+    <div class="left"></div>
+    [[footer.txt]]
+</div>
+
+</div>
+
+</body>
+</html>
